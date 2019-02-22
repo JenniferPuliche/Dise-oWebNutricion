@@ -1,0 +1,110 @@
+*{
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+}
+
+a:visited, a:link, a:hover, a:focus, a:active{
+	text-decoration: none;
+	list-style: none;
+}
+
+ul,li{
+	list-style: none;
+}
+
+header{
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 5;
+	background: rgba(0,0,0,.5);
+}
+
+header .logotipo{
+	width: 35%;
+}
+
+.redes ul li i {
+	width: 35px;
+	line-height: 35px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.redes ul li i.fa-facebook-f{
+	background: #1475E0
+}
+
+.redes ul li i.fa-instagram{
+	background: #B18768
+}
+
+.redes ul li i.fa-youtube{
+	background: #F95F62
+}
+
+/*.buscador{
+	border: 0;
+	outline: none;
+	border-radius: 2px;
+	width: 200px;
+	margin-top:10px; 
+}*/
+
+.fa-search{
+	padding-right: 55px;
+	margin-top: 6px;
+}
+
+.fa-bars{
+	font-size: 35px;
+	padding-right: 10px;
+}
+
+.redesMovil{
+	position: fixed;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%,0%);
+}
+
+.fade-slider{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+.bannerEstatico{
+	background: rgba(0,0,0,0);
+}
+
+
+@media(max-width: 991px) and (min-width: 768px){
+	header .logotipo{
+	width: 40%;
+	margin-top: 0;
+}
+	.fa-search{
+	padding-right: 40px;
+	margin-top: 4px;
+}
+}
+
+@media(max-width: 767px) and (min-width: 576px){
+	header .logotipo{
+	width: 40%;
+}
+
+}
+
+@media(max-width: 575px){
+	header .logotipo{
+	width: 75%;
+}
+
+	.fa-bars{
+	font-size: 40px
+	}
+}
