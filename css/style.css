@@ -7,6 +7,7 @@
 a:visited, a:link, a:hover, a:focus, a:active{
 	text-decoration: none;
 	list-style: none;
+	color: white;
 }
 
 ul,li{
@@ -60,12 +61,14 @@ header .logotipo{
 .fa-bars{
 	font-size: 35px;
 	padding-right: 10px;
+	cursor: pointer;
 }
 
 .redesMovil{
 	position: fixed;
 	bottom: 0px;
 	left: 50%;
+	z-index: 10;
 	transform: translate(-50%,0%);
 }
 
@@ -80,6 +83,115 @@ header .logotipo{
 	background: rgba(0,0,0,0);
 }
 
+.menu{
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	background: rgba(0,0,0,.8);
+	overflow-x: hidden;
+	display: none;
+	font-size: 28px;
+}
+
+.btnClose{
+	position: absolute;
+	color: white;
+	top: 60px;
+	right: 25%;
+}
+
+.menu .nav{
+	margin-top: 8%;
+}
+
+.grid figure{
+	position:relative;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:8px solid white;
+	border-right:8px solid white;
+	cursor:pointer;
+	transition:1s all;
+}
+
+.grid .columna1{
+	width:40%;
+}
+
+.grid .photo1{
+	height:400px;
+	background:url(../img/imagen1.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo2{
+	height:300px;
+	background:url(../img/imagen1.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo3{
+	height:300px;
+	background:url(../img/imagen1.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo4{
+	height:300px;
+	background:url(../img/imagen1.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo5{
+	height:400px;
+	background:url(../img/imagen1.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo6{
+	height:200px;
+	background:url(../img/imagen1.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid figure p{
+	position:absolute;
+	left:0px;
+	bottom:-16px;
+	width:100%;
+	background:rgba(0,0,0,.7);
+	color:white;
+	font-weight: 100;
+	font-size:20px;
+}
+
+.grid figure p:hover{
+	background:#4caf50;
+}
+
+footer{
+	background-color: black;
+	padding: 40px;
+	color: white;
+}
+
+
+
+@media(max-width: 1199px) and (min-width: 992px){
+	.btnClose{
+	top: 35px;
+}
+
+}
 
 @media(max-width: 991px) and (min-width: 768px){
 	header .logotipo{
@@ -90,6 +202,40 @@ header .logotipo{
 	padding-right: 40px;
 	margin-top: 4px;
 }
+
+	.menu .nav{
+	margin-top: 12%;
+}
+
+	.btnClose{
+	top: 45px;
+}
+
+	.grid figure p{
+		font-size:16px;
+}
+
+	.grid .photo1{
+		height:300px;
+}
+
+	.grid .photo2{
+		height:200px;
+}
+
+	.grid .photo3{
+		height:200px;
+}
+
+	.grid .photo4{
+		height:200px;
+}
+
+	.grid .photo5{
+		height:300px;
+}
+
+
 }
 
 @media(max-width: 767px) and (min-width: 576px){
@@ -97,6 +243,41 @@ header .logotipo{
 	width: 40%;
 }
 
+	.btnClose{
+	top: 20px;
+}
+
+	.grid .columna1{
+	width:50%;
+}
+
+	.grid .photo1{
+		height:200px;
+}
+
+	.grid .photo2{
+		height:200px;
+}
+
+	.grid .photo3{
+		height:200px;
+}
+
+	.grid .photo4{
+		height:200px;
+}
+
+	.grid .photo5{
+		height:200px;
+}
+
+	.grid .photo6{
+		height:200px;
+}
+
+	.grid figure p{
+		font-size:14px;
+}
 }
 
 @media(max-width: 575px){
@@ -107,4 +288,44 @@ header .logotipo{
 	.fa-bars{
 	font-size: 40px
 	}
+
+	.menu .nav{
+	margin-top: 22%;
+}
+
+	.btnClose{
+	top: 55px;
+}
+
+	.grid figure p{
+	font-size:12px;
+}
+	.grid .photo1{
+		height:100px;
+}
+
+	.grid .photo2{
+		height:100px;
+}
+
+	.grid .photo3{
+		height:100px;
+}
+
+	.grid .photo4{
+		height:100px;
+}
+
+	.grid .photo5{
+		height:100px;
+}
+
+	.grid .photo6{
+		height:100px;
+}
+
+.grid figure{
+	border-left:4px solid white;
+	border-right:4px solid white;
+
 }

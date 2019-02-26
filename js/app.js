@@ -28,3 +28,20 @@ $(window).scroll(function(){
 		$("header").css({"background":"rgba(0,0,0,.5)"})
 	}
 })
+
+
+$(".fa-bars").click(function(){
+	$(".menu").fadeIn("fast");
+})
+
+$(".btnClose").click(function(){
+	$(".menu").fadeOut("fast");
+})
+
+$(".grid figure").mouseover(function(){
+	$(this).css({"background-position":"right bottom"});
+})
+
+$(".grid figure").mouseout(function(){
+	$(this).css({"background-position":"left top"});
+})
