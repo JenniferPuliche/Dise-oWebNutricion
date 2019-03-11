@@ -16,7 +16,7 @@ $(".fade-slider").jdSlider({
 });
 
 var alturaBanner = $(".fade-slider").height();
-$(".bannerEstatico").css({"height":alturaBanner+"px"});
+$(".bannerEstatico").css({"height":alturaBanner+"px"})
 
 
 $(window).scroll(function(){
