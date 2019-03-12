@@ -23,7 +23,7 @@ header{
 }
 
 header .logotipo{
-	width: 35%;
+	width: 40%;
 }
 
 .redes ul li i {
@@ -221,11 +221,15 @@ footer{
 	top: 35px;
 }
 
+	header .logotipo{
+	width: 52%;
+}
+
 }
 
 @media(max-width: 991px) and (min-width: 768px){
 	header .logotipo{
-	width: 40%;
+	width: 50%;
 	margin-top: 0;
 }
 	.fa-search{
@@ -274,7 +278,7 @@ footer{
 
 @media(max-width: 767px) and (min-width: 576px){
 	header .logotipo{
-	width: 40%;
+	width: 48%;
 }
 
 	.btnClose{
