@@ -26,6 +26,12 @@
 
 	<script src="js/bootstrap.min.js"></script>
 
+	<script src="js/plugins/pagination.min.js"></script>
+
+	<script src="js/plugins/jquery.superscrollorama.js"></script>
+
+	<script src="js/plugins/TweenMax.min.js"></script>
+
 </head>
 
 <body>
@@ -65,15 +71,25 @@ HEADER
 
 				<div class="col-2 col-sm-1 col-md-3 col-lg-5 d-flex justify-content-end pt-3 mt-1">
 				<!--BUSCADOR-->
-					<div class="d-none d-md-block">
-						<!--<input placeholder="Buscar" type="text" class="buscador d-none d-sm-block"></input>-->
-						<i class="fas fa-search lead"></i>
-					</div>
+					<div class="d-none d-md-block pr-4 pr-lg-5 mt-1">
+						<i class="fas fa-search lead" data-toggle="collapse" data-target="#buscador"></i>
+					</div>	
 				<!--MENU HAMBURGUESA-->
 					<div>
 						<i class="fas fa-bars lead"></i>
 					</div>
 				</div>
+
+				<div id="buscador" class="collapse col-12">					
+					<div class="input-group float-right w-50 pl-xl-5 pb-3">					
+						<input type="text" class="form-control" placeholder="Buscar">
+						<div class="input-group-append">				
+							<span class="input-group-text">
+								<i class="fas fa-search"></i>
+							</span>
+						</div>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</header>
@@ -120,7 +136,6 @@ BANNER
 				</li>
 				
 			</ul>
-			
 		</div>
 		<div class="controller d-none">
 			<a class="auto" href="#">
@@ -204,10 +219,10 @@ GRID DE CATEGORÍAS
 CONTENIDO PRINCIPAL
 ======================================-->
 	<div class="container-fluid bg-white contenidoInicio mt-4 pb-4">
-		<div class="container">
+		<div class="container principal">
 			<div class="row">
 				<!-- COLUMNA IZQUIERDA -->
-				<div class="col-12 col-md-8 col-lg-10 p-0 pr-lg-5">
+				<div class="col-12 col-md-8 col-lg-10 p-0 pr-md-3 pr-lg-5">
 					<!-- ARTÍCULO 01 -->
 					<div class="row articulo">
 						<div class="col-12 col-lg-5">
@@ -215,7 +230,7 @@ CONTENIDO PRINCIPAL
 								<h5 class="d-block d-lg-none py-3">Inmunonutrición</h5>
 							</a>		
 							<a href="articulos.html">
-								<img src="img/articulo.jpg" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
+								<img src="img/inmunonutricion.jpg" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
 							</a>
 						</div>
 						<div class="col-12 col-lg-7 introArticulo">						
@@ -235,7 +250,7 @@ CONTENIDO PRINCIPAL
 								<h5 class="d-block d-lg-none py-3">Recetas Gluten Free</h5>
 							</a>
 							<a href="articulos.html">
-								<img src="img/articulo.jpg" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
+								<img src="img/glutenfree.jpg" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
 							</a>
 						</div>
 						<div class="col-12 col-lg-7 introArticulo">
@@ -257,7 +272,7 @@ CONTENIDO PRINCIPAL
 								<h5 class="d-block d-lg-none py-3">Nuestra microbiota</h5>
 							</a>
 							<a href="articulos.html">
-								<img src="img/articulo.jpg" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
+								<img src="img/microbiota.jpg" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
 							</a>
 						</div>
 						<div class="col-12 col-lg-7 introArticulo">
@@ -281,7 +296,7 @@ CONTENIDO PRINCIPAL
 				<!-- NOSOTROS -->
 					<div class="nosotros">					
 						<h4>Nosotros</h4>
-						<img src="img/icono.jpg" alt="Lorem ipsum dolor sit amet" class="img-fluid my-1">
+						<img src="img/articulo.jpg" alt="Lorem ipsum dolor sit amet" class="img-fluid my-1">
 						<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odio, eos architecto atque numquam alias laboriosam minima beatae consectetur.</p>
 					</div>
 				<!-- COMENTARIOS RECIENTES -->
@@ -326,12 +341,11 @@ CONTENIDO PRINCIPAL
 					</div>
 					<!-- PUBLICIDAD -->
 					<div class="my-4">
-						<img src="img/icono.jpg" class="img-fluid">
+						<img src="img/publicidad.gif" class="img-fluid">
 					</div>	
 					<div class="my-4">
-						<img src="img/icono.jpg" class="img-fluid">
+						<img src="img/publicidad.gif" class="img-fluid">
 					</div>	
-				</div>
 				</div>
 			</div>
 		</div>
