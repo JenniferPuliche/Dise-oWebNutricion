@@ -52,8 +52,9 @@ header .logotipo{
 }
 
 .fa-bars{
-	font-size: 35px;
-	padding-right: 10px;
+	font-size:35px;
+	padding-right: 30px;
+	padding-top: 6px;
 	cursor: pointer;
 }
 
@@ -86,7 +87,8 @@ header .logotipo{
 	background: rgba(0,0,0,.8);
 	overflow-x: hidden;
 	display: none;
-	font-size: 28px;
+	font-size: 34px;
+	line-height:70px;
 }
 
 .btnClose{
@@ -175,6 +177,10 @@ header .logotipo{
 	transform: translate(0%,-2%);
 }
 
+.contenido{
+	margin-top: 130px;
+}
+
 .articulo{
 	background-color: #b0bec5;
 	padding: 20px;
@@ -206,7 +212,35 @@ header .logotipo{
 	color:#4caf50;
 }
 
+.breadcrumb{
+	font-size: 30px;
+}
 
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: ">";
+}
+
+.fechaArticulo{
+	position: absolute;
+	left: 500px;
+	top:6px;
+	font-size: 20px;
+}
+
+.btnF{
+	background: #1475E0;
+}
+
+.btnT{
+	background: #00A6FF;
+}
+
+.btnG{
+	background: #DD4D41;
+}
 
 footer{
 	background-color: black;
@@ -224,6 +258,8 @@ footer{
 	header .logotipo{
 	width: 52%;
 }
+
+
 
 }
 
@@ -271,8 +307,16 @@ footer{
 
 	.fecha{
 		top:-313px;
-	}
+}
 
+	.fechaArticulo{
+		left: 350px;
+}
+
+	.btnCompartir .btn-group button, .btnCompartir .btn-group button span{
+		font-size:14px;
+		padding:6px;
+}
 
 }
 
@@ -320,6 +364,23 @@ footer{
 	.fecha{
 		top:-350px;
 	}
+
+	.fechaArticulo{
+		padding-bottom: 12px;
+}
+
+	.tituloArticulo{
+		padding-bottom: 12px;
+}
+
+	.fechaArticulo{
+		left: 420px;
+}
+
+	.btnCompartir .btn-group button, .btnCompartir .btn-group button span{
+		font-size:14px;
+		padding:6px;
+}
 }
 
 @media(max-width: 575px){
@@ -375,4 +436,21 @@ footer{
 		top:-267px;
 		font-size:14px;
 	}
+
+	.breadcrumb{
+		font-size: 25px;
+}
+
+	.breadArticulo{
+		display: none;
+	}
+
+	.fechaArticulo{
+		left: 330px;
+}
+
+	.btnCompartir .btn-group button, .btnCompartir .btn-group button span{
+		font-size:12px;
+		padding:4px;
+}
 }
